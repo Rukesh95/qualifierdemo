@@ -1,0 +1,35 @@
+logging:
+  level:
+    '[org.springframework.web]': ERROR
+    '[com.example.qualifierdemo]' : DEBUG 
+  pattern:
+    console: '"%d{yyyy-MM-dd HH:mm:ss} - %msg%n"'
+    file: '"%d{yyyy-MM-dd HH:mm:ss} - %msg%n"'
+#  file:
+#    name: /home/rukesh/spring-boot-logging/spring_traingin/qualifier.log
+oito:
+  training :
+    value : Student
+spring:
+  datasource:
+    driver-class-name:
+      com.mysql.cj.jdbc.Driver
+    url:
+      jdbc:mysql://localhost:3306/employee_db
+    username:
+      root
+    password:
+      12345678
+  jpa:
+    show-sql:
+      true  
+    hibernate:
+      ddl-auto: 
+        update
+    properties:
+      hibernate:
+        dialect:
+          org:
+            hibernate:
+              dialect:
+                MySQL5Dialect       
